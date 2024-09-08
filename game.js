@@ -60,6 +60,7 @@ function nextSequence() {
   playSound(randomChosenColour);
 }
 
+
 function animatePress(currentColor) {
   $("#" + currentColor).addClass("pressed");
   setTimeout(function () {
@@ -67,10 +68,12 @@ function animatePress(currentColor) {
   }, 100);
 }
 
+
 function playSound(name) {
   var audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
 }
+
 
 function startOver() {
   level = 0;
